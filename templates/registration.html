@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+
+</head>
+<body>
+
+    <form id="registration_form" action="/registration_complete" method="POST">
+
+        Name and Surname:<br>
+        <input type="text" placeholder="John Doe"/>
+        <br>
+
+        Gender:<br>
+
+        male
+        <input type="radio" name="male" id="gender" />
+        female
+        <input type="radio" name="female" id="gender" />
+        <br>
+
+        I heard about this service through: <br>
+
+        Internet
+        <input type="checkbox" name="Internet"  />
+        Press
+        <input type="checkbox" name="Press" />
+        TV
+        <input type="checkbox" name="TV" />
+        <br>
+
+        I wish to receive a message every:
+        <br>
+        <select name="msg_freq">
+            <option value="week">week</option>
+            <option value="month">month</option>
+            <option value="year">Year</option>
+            <option value="century">Century</option>
+        </select>
+        <br>
+
+        Comments:<br>
+        <textarea name="user_comment" id="user_comment">Type your comment in here...</textarea>
+        <br>
+
+        <input type="submit" value="sumbit"></input>
+
+    </form>
+    
+</body>
+</html>
