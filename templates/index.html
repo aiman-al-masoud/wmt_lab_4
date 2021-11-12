@@ -7,16 +7,29 @@
 
     <link rel="stylesheet" href="{{url_for('static', filename='stylesheet_1.css')}}" >
 
+
+    <style type="text/css">
+        p:nth-of-type(2){
+            font-weight: bold;
+            color: green;
+        }
+
+    </style>
+
+
 </head>
 <body> 
     <h1>The strange case of Dr. Jekyll and Mr. Hyde</h1> 
     <h2>Story of the Door</h2> 
     <p> 
-    Mr. Utterson the lawyer was a man of a rugged countenance that 
+    <span class="special">Mr. Utterson the lawyer</span> was a man of a rugged countenance that 
     was never lighted by a smile; cold, scanty and embarrassed in 
     discourse; backward in sentiment; lean, long, dusty, dreary and 
     yet somehow lovable. 
     </p> 
+
+    
+
     <p> 
     At friendly meetings, and when the wine was to his taste, 
     something eminently human beaconed from his eye; something 
@@ -26,7 +39,8 @@
     </p> 
 
 
-    <img src="{{url_for('static', filename='bear_w_books.jpg')}}" />
+
+    <img src="{{url_for('static', filename='drjekyll.jpeg')}}" />
 
 
     <ol><a href="ch1.html">Story of the Door</a> </ol>
